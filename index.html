@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    
+    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-6e0bf343.js">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-1cd1f9d9.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-ef43982a.css">
+  </head>
+  <body>
+    
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit">
+          <svg width="24" height="24" class="icon">
+            <use xlink:href="/vanilla-app-template/assets/sprite-719f6fbc.svg#icon-search"></use>
+          </svg>
+        </button>
+      </form>
+      <div class="gallery"></div>
+      <button type="button" class="load-more">Load more</button>
+    </div>
+    
+  </body>
+</html>
