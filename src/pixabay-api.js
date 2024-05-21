@@ -17,9 +17,9 @@ export const apiService = {
  
     getPhotos(query = this.params.q) {
         this.params.q = query;
-        
+
         return axios.get(this.url, {
-            params: this.params
+            params: this.params,
         })
     }
 }
