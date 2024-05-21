@@ -48,6 +48,7 @@ async function handlerSubmitForm (event){
     // refs.loadMoreBtn.classList.remove("visually-hidden")
     removeClassList(refs.loadMoreBtn, "visually-hidden")
 
+    refs.gallery.innerHTML = "";
 
     try {
         const { data } = await apiService.getPhotos(searchQueryValue)
